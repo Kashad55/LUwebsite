@@ -1,0 +1,376 @@
+/* Global CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', 'sans-serif';
+    color: black;
+    background-color: #f5f5f5;
+}
+input{
+    border: none;
+    outline: none;
+}
+
+section,main,footer{
+    padding: 30px 0;
+}
+a, a.visited{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+
+.is-size-1{
+    font-size: 3rem !important;   /*1rem=16px */
+}
+.is-size-2{
+    font-size: 2.5rem !important;
+}
+.is-size-3{
+    font-size: 2rem !important;
+}
+.is-size-4{
+    font-size: 1.5rem !important;
+}
+.is-size-5{
+    font-size: 1.25rem !important;
+}
+.is-size-6{
+    font-size: 1rem !important;
+}
+.is-size-7{
+    font-size: 0.75rem !important;
+}
+.is-flex{
+    display: flex !important;
+}
+.has-flex-wrap{
+    flex-wrap: wrap !important;
+}
+.has-background-black{
+    background-color: black !important;
+    color: white !important;
+}
+.has-background-white{
+    background-color: white !important;
+    color: black !important;
+}
+.has-background-primary{
+    background-color: #ff6610 !important;
+    color: white;
+}
+.has-text-centered{
+    text-align: center !important;
+}
+.p-1{
+    padding: 0.75rem !important;
+}
+.has-text-grey{
+    color: #7a7a7a;
+}
+.tag{
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    width: fit-content;
+    padding: 5px 20px;
+    font-weight: 800 !important;
+}
+.btn{
+    padding: 5px 10px !important;
+    border-radius: 12px !important;
+}
+
+.is-finished{
+    background-color: #00a123;
+    color: white;
+}
+.is-upcoming{
+    background-color: #167df0;
+    color: white;
+}
+/* Global CSS Ends */
+
+.container{
+    height: auto;
+    width: 90% !important;
+    /* background-color:blanchedalmond; */
+    margin: 0 auto;
+}
+
+.header{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+
+    /* for blur */
+    background-color: rgba(255, 255, 255, 0.752) !important;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: lightpink; */
+    align-items: center;
+}
+.hero{
+    height: 400px;
+    width: 100%;
+    margin-top: 70px;
+    /* background-color: lightgreen; */
+}
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+}
+.left{
+    /* height: 400px; */
+    width: 70%;
+    /* background-color: lightcoral; */
+}
+.right{
+    height: 400px;
+    width: 30%;
+    /* background-color: blue; */
+    position: sticky;
+    top: 0;
+
+}
+.related{
+    /* height: 400px; */
+    width: 100%;
+    /* background-color: rgb(19, 235, 235); */
+}
+.footer{
+    height: 400px;
+    width: 100%;
+    background-color: fuchsia;
+}
+/* Navbar Styles */
+.brand-logo{
+    height: 70px;
+}
+.nav-items{
+    display: flex;
+    /* margin-right: 40px; */
+}
+
+.nav-items li{
+    padding: 10px 15px;
+    margin: 10px ;
+    
+}
+.nav-items li > a:hover{
+    color: #ff6600;
+    transition: 1.5s ;
+}
+
+/* banner */
+.banner{
+    display: flex;
+}
+.banner-content{
+    width: 60%;
+
+
+}
+
+.banner-text-container{
+    height: 150px;
+    width: 80%;
+    /* background-color: yellow; */
+}
+
+.banner-img{
+    width: 40%;
+}
+
+.banner-img img{
+    width: 100%;
+}
+
+.banner-title-container{
+    padding: 10px;
+    background-color: white;
+}
+
+/* progress bar */
+.progress-bar-container{
+    border-bottom: 1px lightgrey;
+}
+.progress-text{
+    display: inline-block;
+
+}
+.banner-progess-container{
+    position: relative;
+}
+.banner-progess-bar{
+    height: 35px;
+    width: 100%;
+}
+.banner-progess-bar-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+
+/* Banner links */
+.banner-links{
+    gap: 10px;
+}
+.banner-link-btn{
+    padding: 10px 25px;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.link-container{
+    margin-right: 15px;
+}
+.link-container:nth-child(2){
+    border-left: 1px solid lightgrey;
+}
+.link-title{
+    padding: 10px 0;
+}
+
+/* Main Content */
+/* Right */
+.right img{
+    width: 100%;
+}
+
+/* Left */
+.main-text-container, .main-search-container{
+    width: 50%;
+}
+
+.search-bar{
+    background-color: white;
+    columns: grey;
+    border-radius: 25px;
+}
+.search-bar > input :active{
+    outline: none;
+
+}
+.main-heading-title{
+    padding-left: 10px;
+}
+.main-heading-search, .fa-search{
+    padding-left: 15px;
+}
+
+/* Classes */
+.class-container{
+    /* height: 400px; */
+    width: 100%;
+    /* background-color: powderblue; */
+}
+.class{
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.2);
+    /* margin: 15px 0; */
+    border-radius: 8px;
+}
+.class-date-container{
+    gap: 15px;
+    align-items: center;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10/10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+}
+.class-detail-wrapper{
+    /* background-color: lightslategrey; */
+    justify-content: space-between;
+}
+.class-details-container{
+    width: 60%;
+}
+.class-attendence-container, .class-video-container{
+    width: 20%;
+}
+/* .class-attendence-container{
+    border: 1px solid grey;
+} */
+
+/* Realated Program */
+.related-program-container{
+    /* background-color: powderblue; */
+    width: 25%;
+
+}
+
+.related-program{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.related-program-date{
+    padding: 5px;
+}
+.related-program-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.related-program-logo{
+    width: 30%;
+}
+.related-program-logo > img{
+    width: 100%;
+}
+.related-program-enroll{
+    width: 90%;
+}
+.related-program-tags{
+    gap: 10px;
+}
+.fa-star{
+    color: lightgrey;
+}
+.is-checked{
+    color: orange !important;
+}
+.related-program-price{
+    padding: 15px;
+    background-color:#fff3eb;
+    color: #ff6600;
+    border-radius: 10px;
+}
+.related-program-price-text{
+    margin-left: 10px;
+}
+
+
+/* Footer */
+
+
+/* Whatsapp Button */
+.whatsapp-btn{
+    background-color: #25d366;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: white; 
+}
